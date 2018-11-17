@@ -1,4 +1,4 @@
-#ORIGEN
+# ORIGEN
 
 Creación de un script para la tercera pŕactica de la asignatura de programación del grado de Desarrollo 
 de aplicaciones Web, que se desarrolla en [Instituto Polígono Sur](https://iespoligonosur.org/) en Sevilla
