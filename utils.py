@@ -1,9 +1,19 @@
 import calendar
+import math
 
 
-
-
-
+def ordenaLista(lista):
+  n = 0
+  while n < len(lista) :
+    t = n + 1
+    while t < len(lista):
+      if int(lista[t]) < int(lista[n]):
+        temp = lista[n]
+        lista[n] = lista[t]
+        lista[t] = temp
+      t += 1
+    n += 1
+  return lista
 
 def crea_lista_dias(fichero_dias_festivos):
     dias_festivos = fichero_dias_festivos.readline().strip()
@@ -34,7 +44,12 @@ def consigue_primer_dia_year(year):
     if year == 2018:
         return 0
     else:
-        return (year - 2018) % 7
+        if year < 2021 and year > 2018:
+            return (year - 2018) % 7
+        else:
+            x = math.floor((year - 2017) / 4)
+            y = (year - 2018 + x)% (7)
+            return y
 
 
 def asignar_dias_semana(dias, primer_dia_mes):
@@ -60,7 +75,6 @@ def crea_calendario(fichero_meses, fichero_dias, primer_dia_mes):
     fichero_dias.close()
 
     return result
-
 
 
 
