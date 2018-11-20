@@ -23,7 +23,7 @@ Para desarrollarlo es bastante sencillo:
 
 
 
-`python app2.py  meses numeros festivos dias_bisiesto`
+`python app2.py  meses numeros dias_bisiesto festivos`
 
 # DESARROLLO 
 
