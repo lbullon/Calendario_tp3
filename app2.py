@@ -71,22 +71,3 @@ respuesta = crea_calendario_festivos_pedido(calendario_festivos)
 
 print(respuesta)
 
-        x = meses[n]
-
-        t = 0
-        while len(calendario_festivos[x]) > t:
-            if calendario_pedido[x][calendario_festivos[x][t]] == 6:
-                calendario_festivos[x][t] = int(calendario_festivos[x][t]) + 1
-
-            else:
-                calendario_festivos[x][t] = calendario_festivos[x][t]
-            t += 1
-        n += 1
-
-    return calendario_festivos
-
-
-respuesta = crea_calendario_festivos_pedido(calendario_festivos)
-
-
-print(respuesta)
